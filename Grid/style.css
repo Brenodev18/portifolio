@@ -1,0 +1,122 @@
+
+.cab{
+    display: flex;
+    align-items: start;
+    position: fixed;
+    float: left;
+    z-index: 1;
+    height: 100px;
+    width: 90%;
+    font-size:35px;
+    padding: 20px;
+    margin-top: 80px;
+    margin-left: -10px;
+    
+    
+}
+
+.cab li{
+    list-style: none;
+}
+
+.cab a{
+    color: blueviolet;
+    text-decoration: none;
+    background-color: aliceblue;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 2px 2px 7px 2px rgba(0, 0, 0, 0.5);
+}
+
+.cab a:hover{
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    transition: 0.4s;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
+    background-color: red;
+}
+
+.container{
+    height: 100vh;
+    display: grid;
+    grid-template-columns:1fr 380px;
+    grid-template-rows: 50px 200px 1fr 50px;
+    grid-template-areas: 
+        "topo topo"
+        "men men"
+        "princ second"
+        "rodape rodape"
+     ;
+
+        gap: 10px;
+}
+
+.topo{
+grid-area: topo;
+background-color: rgba(255, 242, 120, 0.76);
+text-align: center;
+align-content: center;
+}
+
+.menu{
+grid-area: men;
+background-color: black;
+text-align: center;
+align-content: center;
+}
+
+.menu img{
+    width: 100%;
+    height: 270px;
+}
+
+.princ{
+grid-area: princ;
+background-color: rgb(180, 180, 180);
+text-align: center;
+align-items: center;
+align-content: center;
+
+display: grid;
+grid-template-columns: 400px 400px 400px;
+grid-template-rows:    400px 400px;
+
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.princ .item{
+    flex: 1 1 calc(33.33% - 10px);
+    height: calc(50% - 10px);
+    background-color: rgba(0,255, 255, 255, 0.3);
+    border: 1px solid #00ffff;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+.second{
+grid-area: second;
+color: black;
+background-color: rgb(255, 255, 255);
+text-align: center;
+align-content: center;
+}
+
+.rodape{
+grid-area: rodape;
+background-color: rgb(66, 62, 62);
+text-align: center;
+align-content: center;
+}

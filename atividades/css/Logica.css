@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: antiquewhite;
+    width: 100%;
+    height: 100%;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cab{
+    display: flex;
+    align-items: start;
+    position: relative;
+    height: 100px;
+    width: 90%;
+    font-size:35px;
+    padding: 20px;
+    margin-top: 15px;
+    margin-left: -90px;
+}
+
+.cab li{
+    list-style: none;
+}
+
+.cab a{
+    text-decoration: none;
+    background-color: aliceblue;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 2px 2px 7px 2px rgba(0, 0, 0, 0.5);
+}
+
+.cab a:hover{
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    transition: 0.4s;
+}
+
+.container #title{
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    margin: auto;
+    width: 50%;
+    height: 30%;
+    border: 1px solid;
+    border-radius: 18px;
+    box-shadow: 2px 2px 7px 2px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.grade{
+    padding: 20px;
+    width: 90%;
+    height: 100px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    grid-template-columns: 2fr 2fr 2fr 2fr;
+    gap: 15px;
+}
+
+.grade h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+    background-color: white;
+    border-radius: 18px;
+    box-shadow: 2px 2px 7px 2px rgba(0, 0, 0, 0.3);
+}
+
+.grade h2:hover{
+    background-color: rgba(0, 0, 0, 0.788);
+    color: white;
+    font-weight: bold;
+    transform: scale(1.10);
+    transition: 0.3s;
+}
+
+.grade a{
+    font-size: 15px;
+    text-decoration: none;
+}

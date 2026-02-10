@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Paciente</title>
+    <link rel="stylesheet" href="/css/regs2.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container">
+
+        <h1 class="title">Novo Registro</h1>
+        <p class="subtitle">
+            Sistema de cadastro psicológico – Preencha as informações com atenção e cuidado
+        </p>
+
+        <div class="card modal">
+            <div class="card-header">
+                <span class="icon">👤</span>
+                <div>
+                    <h2>Dados Pessoais</h2>
+                    <p>Informações básicas </p>
+                </div>
+            </div>
+
+            <!-- ações: (botão Salvar foi movido para o final do formulário) -->
+
+            <div class="tab-switch" role="tablist" aria-label="Seções do formulário">
+                <button class="tab-btn active" data-tab="personal" aria-pressed="true">Dados Pessoais</button>
+                <button class="tab-btn" data-tab="extra" aria-pressed="false">Formulário</button>
+            </div>
+
+            <div class="tab-content">
+              <section class="tab-panel tab-personal" data-panel="personal">
+                <div class="mode-toggle" role="tablist" aria-label="Modo de registro">
+                    <button class="mode-btn active" data-mode="name" aria-pressed="true">Por Nome</button>
+                    <button class="mode-btn" data-mode="cpf" aria-pressed="false">Por CPF</button>
+                </div>
+
+                <div class="form-grid form-by-name">
+                    <div class="form-group">
+                        <label>Nome Completo *</label>
+                        <input type="text" id="nome">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Data de Nascimento *</label>
+                        <input type="date" id="nascimento">
+                    </div>
+                </div>
+
+                <div class="form-grid form-by-cpf" style="display:none;">
+                    <div class="form-group full">
+                        <label>CPF *</label>
+                        <input type="text" id="cpf" placeholder="000.000.000-00">
+                    </div>
+                </div>
+              </section>
+
+              <section class="tab-panel tab-extra" data-panel="extra" style="display:none;">
+                <div class="card-header">
+                    <span class="icon">🩺</span>
+                    <div>
+                        <h2>Formulário Clínico / Escolar</h2>
+                        <p>Assinale as opções que se aplicam</p>
+                    </div>
+                </div>
+
+                <div class="form-grid">
+                    <div class="form-group full">
+                        <label><input type="checkbox" id="pcd"> Pessoa com deficiência (PCD)</label>
+                    </div>
+
+                    <div class="form-group full">
+                        <label><input type="checkbox" id="medicacao"> Faz uso de medicações contínuas</label>
+                    </div>
+
+                    <div class="form-group full">
+                        <label><input type="checkbox" id="acompanhamento"> Está em acompanhamento/tratamento com profissionais de saúde</label>
+                    </div>
+
+                    <div class="form-group full">
+                        <label><input type="checkbox" id="acompanhante"> Necessita de acompanhante terapêutico em sala de aula</label>
+                    </div>
+
+                    <div class="form-group full">
+                        <label><input type="checkbox" id="adaptacao" data-target="adaptacao-detalhe"> Necessita de alguma adaptação para acessibilidade</label>
+                        <input class="detail-input" type="text" id="adaptacao-detalhe" placeholder="Descreva a adaptação necessária (opcional)">
+                    </div>
+
+                    <div class="form-group full">
+                        <label><input type="checkbox" id="dificuldade" data-target="dificuldade-detalhe"> Tem dificuldade de aprendizagem</label>
+                        <input class="detail-input" type="text" id="dificuldade-detalhe" placeholder="Descreva (opcional)">
+                    </div>
+
+                    <div class="form-group full">
+                        <label><input type="checkbox" id="reprovacoes" data-target="reprovacoes-detalhe"> Reprovações anteriores</label>
+                        <input class="detail-input" type="text" id="reprovacoes-detalhe" placeholder="Quantas / observações (opcional)">
+                    </div>
+
+                    <div class="form-group full">
+                        <label><input type="checkbox" id="abandono" data-target="abandono-detalhe"> Abandono de curso</label>
+                        <input class="detail-input" type="text" id="abandono-detalhe" placeholder="Se sim, detalhe (opcional)">
+                    </div>
+
+                    <div class="form-group full">
+                        <label><input type="checkbox" id="malestar" data-target="malestar-detalhe"> Mal estar psicológico (crises de ansiedade, depressão)</label>
+                        <input class="detail-input" type="text" id="malestar-detalhe" placeholder="Se sim, descreva (opcional)">
+                    </div>
+
+                    <div class="form-group full">
+                        <label><input type="checkbox" id="crises-familiares" data-target="crises-detalhe"> Crises familiares</label>
+                        <input class="detail-input" type="text" id="crises-detalhe" placeholder="Se sim, detalhe (opcional)">
+                    </div>
+
+                    <div class="form-group full">
+                        <label>Observações gerais</label>
+                        <textarea id="observacoes" placeholder="Observações adicionais (opcional)" rows="4"></textarea>
+                    </div>
+                    <!-- ações do formulário: alerta + salvar -->
+                    <div class="form-group full">
+                        <div id="saveAlert" class="save-alert" aria-live="polite" role="status" style="display:none">Salvo com sucesso ✅</div>
+                        <a style="text-decoration: none;" href="Registros.html"><button type="button" id="saveBtn" class="btn full">Salvar</button></a>
+                    </div>
+                </div>
+              </section>
+
+            </div>
+        </div>
+
+
+        <footer style="max-width:900px;margin:24px auto;text-align:center;">
+            <p>
+                <!-- botões de footer removidos — ação de salvar moved for inside the form -->
+            </p>
+        </footer>
+
+</div>
+</body>
+</html>
+
+<script>
+    
+            (function(){
+                    
+                    const buttons = document.querySelectorAll('.mode-btn');
+                    const byName = document.querySelector('.form-by-name');
+                    const byCpf = document.querySelector('.form-by-cpf');
+
+                    buttons.forEach(btn=>{
+                        btn.addEventListener('click', () => {
+                            buttons.forEach(b => { b.classList.remove('active'); b.setAttribute('aria-pressed','false'); });
+                            btn.classList.add('active'); btn.setAttribute('aria-pressed','true');
+                            const mode = btn.getAttribute('data-mode');
+                            if(mode === 'name'){
+                                byName.style.display = '';
+                                byCpf.style.display = 'none';
+                            } else {
+                                byName.style.display = 'none';
+                                byCpf.style.display = '';
+                            }
+                        });
+                    });
+
+                    
+                    const tabButtons = document.querySelectorAll('.tab-btn');
+                    const tabPanels = document.querySelectorAll('.tab-panel');
+
+                    tabButtons.forEach(tb => {
+                        tb.addEventListener('click', () => {
+                            const target = tb.getAttribute('data-tab');
+                            tabButtons.forEach(b => { b.classList.remove('active'); b.setAttribute('aria-pressed','false'); });
+                            tabPanels.forEach(p => p.style.display = 'none');
+                            tb.classList.add('active'); tb.setAttribute('aria-pressed','true');
+                            const panel = document.querySelector('.tab-panel[data-panel="' + target + '"]');
+                            if(panel) panel.style.display = '';
+                        });
+                    });
+
+                                        const toggles = document.querySelectorAll('input[type="checkbox"][data-target]');
+                                        function updateDetail(checkbox){
+                                            const id = checkbox.getAttribute('data-target');
+                                            const el = document.getElementById(id);
+                                            if(!el) return;
+                                            el.style.display = checkbox.checked ? '' : 'none';
+                                        }
+                                        toggles.forEach(cb => {
+                                            const id = cb.getAttribute('data-target');
+                                            const el = document.getElementById(id);
+                                            if(el){ if(cb.checked) el.classList.add('visible'); else el.classList.remove('visible'); }
+                                            cb.addEventListener('change', ()=> {
+                                                if(el){ el.classList.toggle('visible', cb.checked); }
+                                            });
+                                        });
+
+                                        // salvar botão — handler simples com feedback visual
+                                        const saveBtn = document.getElementById('saveBtn');
+                                        const saveAlert = document.getElementById('saveAlert');
+                                        if(saveBtn){
+                                            saveBtn.addEventListener('click', (e) => {
+                                                // aqui você pode validar e enviar via fetch; por agora só mostramos feedback
+                                                saveAlert.style.display = '';
+                                                // force reflow then add class for animation
+                                                void saveAlert.offsetWidth;
+                                                saveAlert.classList.add('visible');
+                                                saveBtn.disabled = true;
+                                                setTimeout(()=>{
+                                                    saveAlert.classList.remove('visible');
+                                                    saveBtn.disabled = false;
+                                                    saveAlert.style.display = 'none';
+                                                }, 1800);
+                                            });
+                                        }
+                })();
+</script>

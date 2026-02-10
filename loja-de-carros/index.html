@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" 
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    
+
+    
+</head>
+<body>
+  <!-- CABEÇALHO -->
+
+<section id="navBar">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="navBar container-fluid">
+        <a class="navbar-brand" href="#"><img id="logo" src="img/Auto_Prime_Logo_Opção_3-removebg-preview.png" alt=""></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Modelos
+            </a>
+            <ul class="dropdown-menu">
+                <li class="container-fluid">
+                    <a id="suv" class="dropdown-item" href="#">SUVS</a>
+                    <img id="car" src="img/car suv.png" alt="">
+                    <img id="car" src="img/car suv2.jpg" alt="">
+                    <img id="car" src="img/car suv3.jpg" alt="">
+                </li>
+
+                <li>
+                  <a class="dropdown-item" href="#">IMPORTADOS</a>
+                  <img id="car" src="img/car imp.jpeg" alt="">
+                  <img id="car" src="img/car imp2.jpg" alt="">
+                  <img id="car" src="img/car imp3.jpg" alt="">
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">CLASICOS</a>
+                  <img id="car" src="img/clasic.jpg" alt="">
+                  <img id="car" src="img/car-clasic2.webp" alt="">
+                  <img id="car" src="img/car-clasic3.jpg" alt="">
+                </li>
+            </ul>
+            <li class="nav-item">           
+            <a class="nav-link active" aria-current="page" href="#">OFERTAS</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="#">SERVIÇO E BENEFÍCIOS</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="#">FALE-CONOSCO</a>
+            </li>
+            <li class="lgn nav-item">
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">LOGIN</button>
+            </li>
+            </li>
+        </ul>
+        </div>
+    </div>
+    </nav>
+</section>
+
+<header class="cab">
+        <ul>
+            <li>
+                <a href="/atividades/projeto de front end.html">Voltar</a>
+            </li>
+        </ul>
+    </header>
+
+<!-- BANNER -->
+<section id="banner">
+ <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="img/car-banner.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="img/car-banner2.webp" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="img/car-banner3.jpg" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+</section>
+
+  <!-- CARD -->
+<div class="grid">
+
+  <div class="cx1"></div>
+
+  <div class="cx2"></div>
+
+  <div class="cx3"></div>
+
+  <div class="cx4"></div>
+
+  <div class="cx5"></div>
+  
+  <div class="cx6">></div>
+
+</div>
+
+<!-- MODAL -->
+<section id="modal">
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">LOGIN</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+
+          <section id="login2">
+
+            <label for="user">Nome</label>
+            <input id="user" type="text" placeholder="Ex: Breno" required="required">
+
+            <label for="senha">senha</label>
+            <input id="senha" type="password" placeholder="*****" required="required">
+
+            <input type="button" value="login" class="btn btn-primary" id="btn-login" onclick="login()"> 
+
+            <div id="botao-cadastrar2">
+                  <div id="bttn">
+                    <button type="button" class="btn btn-info">Não é cadastrado? Cadastre-se</button>
+                  </div>
+                </div>
+          </section>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" 
+    crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.1.js"
+integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="/jquery-script.js"></script>
+</body>
+</html>

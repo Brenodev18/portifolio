@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria</title>
+    <link rel="stylesheet" href="/css/Galeria.css">
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.css" rel="stylesheet" />
+</head>
+
+<body>
+
+    <!-- CABEÇALHO  -->
+    <nav>
+        <div class="bar">
+            <ul>
+                <img id="logo" src="/img/logo.png">
+                <a id="rs" href="dash.html">
+                    Home
+                </a>
+
+                <a id="rg" href="Registros.html">
+                    Atendimentos
+                </a>
+
+                <a id="hm" href="Galeria.html">
+                    Galeria
+                </a>
+
+                <div class="perf">
+                    <a id="lgn" href="login.html">Logout</a>
+                    <img class="perfil" src="/img/perfil.png">
+                </div>
+
+            </ul>
+        </div>
+    </nav>
+    
+    <div class="containeer">
+        <ul>
+            <button id="abrirModalBtn">Novo Álbum</button>
+            <a id="camp" href="Galeria.html">Campanhas</a>
+            <a id="" href="eventos.html">Eventos</a>
+        </ul>
+
+        <div class="fts">
+            <div class="cad">
+                <img class="ft1" src="/img/img1.jpg">
+                <h2>05 de setembro 2025</h2>
+                <p>Setembro amarelo</p>
+                <h5>Parnaiba,pi</h5>
+            </div>
+
+            <div class="cad">
+                <img class="ft2" src="/img/img2.jpg">
+                <h2>10 de Outubro 2025</h2>
+                <p>Outubro rosa</p>
+                <h5>Parnaiba,pi</h5>
+            </div>
+
+            <div class="cad">
+                <img src="/img/img3.jpg">
+                <h2>20 de novembro 2025</h2>
+                <p>Novembro azul</p>
+                <h5>Parnaiba,pi</h5>
+            </div>
+
+            <div class="cad">
+                <img src="/img/img4.jpg">
+                <h2>15 de Novembro 2025</h2>
+                <p>Combate ao suicidio</p>
+                <h5>Parnaiba,pi</h5>
+            </div>
+        </div>
+
+    </div>
+    <dialog id="meuModal">
+        <div class="modal-header">
+            <h1>Adicionar Álbum novo</h1>
+            <button id="fecharModalBtn">&times;</button>
+        </div>
+
+        <p>Título</p>
+        <input type="text" id="Titulo" placeholder="Digite o título">
+
+        <p>Data</p>
+        <input type="text" id="Data" placeholder="Digite a data">
+
+        <!-- Área da imagem -->
+        <div class="image-upload-area">
+            <img src="/img/adicionar.png" alt="Adicionar imagem" class="img-add">
+        </div>
+
+        <div class="modal-footer">
+            <button id="cancelarModalBtn">Cancelar</button>
+            <button id="NovoRegistro">Salvar</button>
+        </div>
+    </dialog>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.js"></script>
+    <script src="/js/galeria.js"></script>
+</body>
+
+</html>
+<!-- test -->

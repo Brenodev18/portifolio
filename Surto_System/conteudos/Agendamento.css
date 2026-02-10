@@ -1,0 +1,328 @@
+.bar{
+    width: 100vw;
+    height: 100px;
+    position: absolute;
+    align-content: center;
+    z-index: 1;
+    margin-bottom: 300px;
+}
+
+.bar a{
+    height: 5vh;
+    text-decoration: none;
+    color: black;
+    font-weight: lighter;
+    align-content: center;
+}
+
+.bar ul{
+    font-size: 23px;
+    font-weight: lighter;
+    display: flex;
+    gap: 50px;
+    text-align: center;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.bar li{
+    width: 10vw;
+    border-radius: 10px;
+}
+
+.bar ul li:hover{
+    transition: 0.4s;
+    cursor: pointer;
+    color: black;
+}
+
+.bar img{
+    
+    width: 150px;
+    height: 150px;
+}
+
+.perf{
+    align-items: center;
+    height: 50px;
+    display: flex;
+    gap: 10px;
+}
+.perf a{
+    margin-top: 0;
+    height: 30px;
+}
+
+.bar .perfil{
+    width: 50px;
+    height: 50px;
+    opacity: 50%;
+}
+
+#lgn{
+    font-weight: bold;
+    color: #525e5b;
+    height: 30px;
+    border-radius: 10px;
+}
+
+#lgn:hover{
+    color:#00d5ff;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+#logo{
+    width: 350px;
+    height: 180px;
+    margin-left: -10vw;
+}
+
+.perf .imgp{
+    width: 50px;
+}
+.perf .imgp2{
+    margin-right: 50px;
+    z-index: -1;
+    width: 50px;
+}
+
+.imgp2{
+    position: fixed;
+    display: none;
+}
+
+.imgp{
+    position: relative;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    height: 900px;
+    width: 100vw;
+}
+.table-wrapper{
+    overflow-x: auto;
+    margin-top: 200px;
+}
+
+.tab{
+    margin-left: auto;
+    margin-top: 120px;
+    width: 80%;
+    display: block;
+}
+
+.cab1{
+    display: flex;
+    margin-left: 40px;
+}
+
+.tab .cab{
+    width: 80%;
+    background-color: rgb(170, 192, 158);
+    color: white;
+    font-weight: bold;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 140px 100px 1fr 100px;
+    gap: 20px;
+    padding: 10px;
+    text-align: start;
+    border: 1px solid black;
+    border-bottom: none;
+    height: 70px;
+}
+.tab .list{
+    display: grid;
+    align-items: center;
+    grid-template-columns: 140px 100px 1fr 100px;
+    gap: 20px;
+    padding: 15px;
+    text-align: start;
+    border: 1px solid;
+    width: 80%;
+    
+}
+
+.tab .list .cell{
+    font-size: 18px;
+    min-width: 0;
+    word-break: break-word;
+}
+.tab .cab .cell{
+    font-size: 20px;
+}
+
+.tab h2{
+    text-align: center;
+    width: 200px;
+    height: 40px;
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+
+.actions{
+    display: flex;
+    gap: 10px;
+}
+.actions img{
+    width: 30px;
+    height: 30px;
+}
+
+.tab .list .cell img{
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 700px){
+    .tab .cab{
+        display: none;
+    }
+    .tab .list{
+        grid-template-columns: 1fr;
+        gap: 6px;
+        padding: 12px;
+        border-radius: 6px;
+    }
+    .tab .list .cell{
+        display: block;
+        padding: 6px 8px;
+    }
+    .tab .list .cell::before{
+        content: attr(data-label) ": ";
+        font-weight: bold;
+        display: inline-block;
+        width: 90px;
+        color: #333;
+    }
+    .table-wrapper{
+        overflow-x: visible;
+    }
+}
+
+.add{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+}
+
+.add button{
+    color: white;
+    font-weight: bold;
+    background-color: rgb(96, 153, 113);
+    text-align: center;
+    padding: 5px;
+    height: 40px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: 1px solid;
+}
+
+.add button:hover{
+    cursor: pointer;
+    color: black;
+    background-color: aliceblue;
+    border: 1px solid black;
+}
+
+.list img{
+    opacity: 60%;
+}
+
+.list img:hover{
+    cursor: pointer;
+    opacity: 100%;
+}
+
+/* MODAL  */
+
+/* Estilos básicos para o overlay */
+dialog {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  background-color: white;
+  width: 400px;
+}
+
+
+/* Estilo para o botão de fechar */
+#fecharModalBtn {
+  float: right;
+  font-size: 20px;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+.modal-header{
+    text-align: center;
+}   
+
+#fecharModalBtn{
+    margin-top: -40px;
+}
+
+#tipo{
+   width: 370px;
+   margin-bottom: 120px;
+}
+.modal-footer{
+    width: 350px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.modal-footer button{
+    width: 120px;
+    justify-content: space-around;
+    border: 1px solid;
+    border-radius: 8px;
+    background-color: rgb(105, 156, 105);
+    color: white;
+}
+
+.inputs{
+    display: flex;
+    margin-bottom: 30px;
+    width: 370px;
+    justify-content: space-around;
+}
+
+.ip-int{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.ip-int input{
+    width: 140px;
+}
+
+.ip-int #time{
+    border: 1px solid;
+    height: 42px;
+}
+
+#NovoRegistro{
+    padding: 8px;
+}
+
+
+.container-scroll{
+    max-height: 50px; 
+    overflow-y: scroll; 
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 300px; 
+}

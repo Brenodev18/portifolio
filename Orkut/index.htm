@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Orkut</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Cabeçalho fixo -->
+    <header class="header">
+        <h1>Orkut</h1>
+        <div class="user-info"></div>
+        <button id="loginBtn" class="btn">Login</button>
+    </header>
+
+    <header class="cab">
+        <ul>
+            <li>
+                <a href="/atividades/projeto de front end.html">Voltar</a>
+            </li>
+        </ul>
+        </header>
+
+    <!-- Layout principal -->
+    <div class="layout">
+        <!-- Barra lateral -->
+        <aside class="sidebar">
+            <div class="perfil">
+                <img src="img/logo.png" alt="Logo" class="logo">
+                <div id="#border-botton"></div>  
+                <p class="sidebar-footer">3 Curtidas</p>
+                <p class="sidebar-footer">2Post</p>
+            </div>
+
+            <footer class="sidebar-footer">
+                <div class="social">
+                   <img src="img/programacao.png" alt="">
+                </div>
+                <p>© SENAI - Orkut</p>
+            </footer>
+        </aside>
+
+        <!-- Conteúdo principal -->
+        <main class="content">
+            <!-- Post 1 -->
+            <div class="card">
+                <div class="card-top">
+                    <img src="img/logo.png" alt="Usuário 1" class="avatar">
+                    <div class="info">
+                        <h3>Usuário_01</h3>
+                        <p><strong>Post</strong> Post 01</p>
+                    </div>
+                </div>
+                <span class="hora">18:30 - 12/08/2025</span>
+                <div class="acoes">
+                    <img src="img/gostar.png" alt="Curtir" class="curtir">
+                    <img src="img/comente.png" alt="Comentar" class="comentar">
+                </div>
+                <div class="comentario-area">
+                    <textarea placeholder="Escreva um comentário..."></textarea>
+                    <button class="btn-enviar">Enviar</button>
+                    <div class="comment-list"></div>
+                </div>
+            </div>
+
+            <!-- Post 2 -->
+            <div class="card">
+                <div class="card-top">
+                    <img src="img/logo.png" alt="Usuário 2" class="avatar">
+                    <div class="info">
+                        <h3>Usuário_02</h3>
+                        <p><strong>Post</strong> Post 02</p>
+                    </div>
+                </div>
+                <span class="hora">20:40 - 15/08/2025</span>
+                <div class="acoes">
+                    <img src="Cutir.svg" alt="Curtir" class="curtir">
+                    <img src="comentario.svg" alt="Comentar" class="comentar">
+                </div>
+                <div class="comentario-area">
+                    <textarea placeholder="Escreva um comentário..."></textarea>
+                    <button class="btn-enviar">Enviar</button>
+                    <div class="comment-list"></div>
+                </div>
+            </div>
+
+            <!-- Post 3 -->
+            <div class="card">
+               <div class="card-top">
+                    <img src="img/logo.png" alt="Usuário 3" class="avatar">
+                    <div class="info">
+                        <h3>Usuário_03</h3>
+                        <p><strong>Post</strong> Post 03</p>
+                    </div>
+                </div>
+                <span class="hora">09:10 - 18/08/2025</span>
+                <div class="acoes">
+                    <img src="Cutir.svg" alt="Curtir" class="curtir">
+                    <img src="comentario.svg" alt="Comentar" class="comentar">
+                </div>
+                <div class="comentario-area">
+                    <textarea placeholder="Escreva um comentário..."></textarea>
+                    <button class="btn-enviar">Enviar</button>
+                    <div class="comment-list"></div>
+                </div>
+            </div>
+
+            </div>
+        </main>
+    </div>
+
+    <!-- Modal de Login -->
+    <div class="modal" id="loginModal" aria-hidden="true">
+        <div class="modal-content" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+            <button id="closeModal" class="btn modal-close" aria-label="Fechar">&times;</button>
+            <h3 id="modalTitle">Entrar</h3>
+            <form id="loginForm">
+                <label class="label">Usuário</label>
+                <input id="username" type="text" placeholder="Digite seu nome">
+
+                <label class="label">Senha</label>
+                <input id="password" type="password" placeholder="Senha">
+
+                <div class="modal-actions">
+                    <button type="submit" class="btn">Entrar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Rodapé fixo -->
+    <footer class="footer">
+        <p>© SENAI - Orkut</p>
+    </footer>
+
+    <script src="script2.js"></script>
+</body>
+
+</html>

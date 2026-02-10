@@ -4,22 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu Portifólio</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/style.css">
 </head>
 <body>
     <!-- CABEÇALHO -->
     <header class="cab">
+        <img src="img/Senai.png" alt="">
         <ul>
             <li>
                 <a href="">Home</a>
-                <a href="">Meu perfil</a>
-                <a href="">projetos</a>
-                <a href="">contatos</a>
+                <a href="#sec1">Atividades</a>
             </li>
         </ul>
     </header>
     <!-- HOME -->
     <article>
+        <h2 id="curso">Tec.informatica para internet</h2>
         <div class="home">
             <img src="img/perfil1.png" alt="">
             <div class="descrip">
@@ -33,12 +33,12 @@
         <div class="status">
 
             <div class="sub-status">
-                <h1>1</h1>
+                <h1 id="at">6</h1>
                 <h2>Atividades feitas</h2>
             </div>
             <h2 id="obj"></h2>
             <div class="sub-status">
-                <h1>2</h1>
+                <h1 id="pj">1</h1>
                 <h2>Projetos</h2>
             </div>
         </div>
@@ -46,7 +46,7 @@
     </article>
 
     <!-- SOBRE MIM-->
-    <div class="sobre">
+    <!-- <div class="sobre">
         <h1>Sobre mim</h1>
     </div>
     <div class="container">
@@ -64,19 +64,41 @@
            veniam quos quibusdam odit nisi dolor tempora quia totam quae reiciendis 
            voluptatem, impedit voluptatum accusantium!
         </p>
-    </div>
+    </div> -->
 
     <!-- ATIVIDADES/PROJETOS -->
 
-    <div class="cont">
+    <section class="cont" id="sec1">
         <h1>Atividades</h1>
 
         <div class="atividades">
-            <h2 class="atv1">Projeto de Front End</h2>
-            <h2 class="atv2">Lógica de programação</h2>
-            <h2 class="atv3">Codificação para Front-End</h2>
+
+            <a href="atividades/projeto de front end.html">
+                <div class="block">                
+                    <h2 class="">Projeto de Front End</h2>              
+                </div>
+            </a>
+
+            <a href="/atividades/Logica de progamação.html">
+                <div class="block">
+                        <h2 class="atv2">Lógica de programação</h2>
+                </div>
+            </a>
+
+            <a href="/atividades/Codificação de front end.html">
+                <div class="block">
+                        <h2 class="atv3">Codificação para Front-End</h2>
+                </div>
+            </a>
+
         </div>
-    </div>
-    
+    </section>
+
+    <footer>
+        <p>© 2026 Breno Rodrigues. Todos os direitos reservados.</p>
+    </footer>
+
+
+  
 </body>
 </html>

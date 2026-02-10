@@ -1,0 +1,124 @@
+.cab{
+    display: flex;
+    align-items: start;
+    position: fixed;
+    float: left;
+    z-index: 1;
+    height: 100px;
+    width: 90%;
+    font-size:35px;
+    padding: 20px;
+    margin-top: -130px;
+    margin-left: -650px;
+    
+    
+}
+
+.cab li{
+    list-style: none;
+}
+
+.cab a{
+    color: blueviolet;
+    text-decoration: none;
+    background-color: aliceblue;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 2px 2px 7px 2px rgba(0, 0, 0, 0.5);
+}
+
+.cab a:hover{
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    transition: 0.4s;
+}
+
+body{
+    width: 400px;
+    margin: 10% auto;
+    background-color: antiquewhite;
+}
+
+#group{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    border: 1px solid;
+    box-shadow: 2px 2px 7px 3px rgba(0, 0, 0, 0.6);
+    border-radius: 12px;
+    width: 490px;
+    height: 650px;
+    background-color: aliceblue;
+}
+
+#group h1{
+    margin-top: 10px;
+    height: 40px;
+    
+}
+
+#group svg{
+    margin-top: 15px;
+    margin-left: 5px;
+}
+
+#group label{
+    margin-top: 15px;
+    margin-left: 12px;
+    font-size: 22px;
+}
+
+#group input{
+    margin: 20px auto;
+    width: 320px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#group button{
+    margin-top: 16px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    font-size: 32px;
+    width: 430px;
+    height: 60px;
+    background-color: black;
+    color: aliceblue;
+}
+
+#group button:hover{
+    cursor: pointer;
+    background-color: whitesmoke;
+    color: black;   
+}
+
+#cl1{
+    display: flex;
+}
+
+#box{
+    text-align: justify;
+    margin-top: 0px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid;
+    border-radius: 10px;
+    box-shadow: 2px 2px 7px 3px rgba(0, 0, 0, 0.3);
+    background-color: rgb(239, 251, 252);
+    width: 410px;
+}
+
+#group textarea{
+    text-align: center;
+    align-content: center;
+    font-size: 18px;
+    width: 440px;
+    height: 110px;
+    border-radius: 8px;
+    margin-top: 15px;
+    box-shadow: 2px 2px 7px 3px rgba(0, 0, 0, 0.2);
+    
+}
+

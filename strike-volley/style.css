@@ -1,0 +1,9 @@
+.buton{
+    margin-left: 300px;
+    border: 1px solid;
+}
+.buton:hover{
+    color: black;
+    background-color: aliceblue;
+    cursor: pointer;
+}

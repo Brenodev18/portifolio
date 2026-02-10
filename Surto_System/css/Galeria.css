@@ -1,0 +1,320 @@
+@view-transition {
+  navigation: auto;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+body{
+    font-family: 'Times New Roman', Times, serif;
+    height: 110vh;
+    width: 100vw;
+    background-color: #f9f8f6;
+    display: flex;
+    flex-direction: column;
+}
+
+.bar{
+    margin-left: -40px;
+    margin-top: -10px;
+    width: 100vw;
+    height: 100px;
+    position: absolute;
+    align-content: center;
+    z-index: 1;
+}
+
+#hm{
+    width: 8vw;
+    border-radius: 10px;
+    background-color: #6f9c8b;
+    color: white;
+}
+
+.bar  a{
+    height: 5vh;
+    text-decoration: none;
+    color: black;
+    font-weight: lighter;
+    align-content: center;
+}
+
+.bar ul{
+    font-size: 25px;
+    font-weight: lighter;
+    display: flex;
+    gap: 50px;
+    text-align: center;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.bar li{
+    width: 10vw;
+    border-radius: 10px;
+}
+
+.bar ul li:hover{
+    transition: 0.4s;
+    cursor: pointer;
+    color: black;
+}
+
+.bar img{
+    
+    width: 150px;
+    height: 150px;
+}
+
+.perf{
+    align-items: center;
+    height: 50px;
+    display: flex;
+    gap: 10px;
+}
+.perf a{
+    margin-top: 0;
+    height: 30px;
+}
+
+.bar .perfil{
+    width: 50px;
+    height: 50px;
+    opacity: 50%;
+}
+
+#lgn{
+    font-weight: bold;
+    color: #525e5b;
+    height: 30px;
+    border-radius: 10px;
+}
+
+#lgn:hover{
+    color:#00d5ff;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+#logo{
+    width: 350px;
+    height: 180px;
+    margin-left: -10vw;
+}
+
+.containeer a{
+    text-decoration: none;
+    color: black;
+}
+
+.containeer5{
+    width: 90vw;
+    height:90vh;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+
+}
+
+.containeer{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    font-size: 30px;;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 210px;
+}
+
+.containeer ul{
+    display: flex;
+    gap: 10px;
+    list-style: none;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.containeer ul li{
+    width: 12vw;
+    border-right: 2px solid;
+    border-left: 2px solid;
+    border: 1px solid;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.6);
+}
+
+.containeer ul li:hover{
+    background-color: rgba(109, 185, 173, 0.562);
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.fts{
+    padding: 10px;
+    justify-content: space-evenly;
+    align-items: start;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-wrap: wrap;
+    width: 100vw;
+    height: 70vh;
+    border-bottom: none;
+
+}
+
+.fts img{
+    width: 250px;
+    height: 180px;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+
+
+.cad{
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    padding: 10px;
+}
+
+.cad:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: 0.5s;
+}
+
+.cad p{
+    height: 50px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.cad h2{
+    margin-top: 10px;
+    margin-bottom: -12px;
+    font-weight: lighter;
+    height: 40px;
+    font-size: 20px;
+}
+
+.cad h5{
+    height: 5px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.camp{
+    background-color: #8EA985;
+    color: white;
+    font-weight: bold;
+    
+}
+
+.add{
+    position: absolute;
+    left: 1vw;
+}
+
+/* MODAL  */
+
+/* Estilos básicos para o overlay */
+dialog {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  background-color: white;
+  width: 400px;
+}
+
+
+/* Estilo para o botão de fechar */
+#fecharModalBtn {
+  float: right;
+  font-size: 20px;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+.modal-header{
+    text-align: center;
+}   
+
+#fecharModalBtn{
+    margin-top: -40px;
+}
+
+#tipo{
+   width: 370px;
+   margin-bottom: 120px;
+}
+.modal-footer{
+    width: 350px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.modal-footer button{
+    width: 120px;
+    justify-content: space-around;
+    border: 1px solid;
+    border-radius: 8px;
+    background-color: rgb(105, 156, 105);
+    color: white;
+}
+
+.inputs{
+    display: flex;
+    margin-bottom: 30px;
+    width: 370px;
+    justify-content: space-around;
+}
+
+.ip-int{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.ip-int input{
+    width: 140px;
+}
+
+.ip-int #time{
+    border: 1px solid;
+    height: 42px;
+}
+
+#NovoRegistro{
+    padding: 8px;
+}
+
+
+.container-scroll{
+    max-height: 50px; 
+    overflow-y: scroll; 
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 300px; 
+}
+.image-upload-area {
+    width: 250px;
+    height: 150px;
+    border: 2px dashed #aaa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 15px auto;
+    cursor: pointer;
+}
+
+.img-add {
+    width: 80px;
+    opacity: 0.7;
+}

@@ -1,0 +1,283 @@
+
+.cab{
+    display: flex;
+    align-items: start;
+    position: fixed;
+    float: left;
+    z-index: 1;
+    height: 100px;
+    width: 90%;
+    font-size:35px;
+    padding: 20px;
+    margin-top: 120px;
+    margin-left: -30px;
+    
+    
+}
+
+.cab li{
+    list-style: none;
+}
+
+.cab a{
+    color: blueviolet;
+    text-decoration: none;
+    background-color: aliceblue;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 2px 2px 7px 2px rgba(0, 0, 0, 0.5);
+}
+
+.cab a:hover{
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    transition: 0.4s;
+}
+
+body{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    height: 800px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.466);
+}
+
+.navBar{
+    margin-top: -10px;
+    background-color: rgb(233, 233, 233);
+    border: 1px solid;
+    box-shadow: 3px 3px 8px 2px rgba(0, 0, 0, 0.7);
+}
+
+.navBar li a:hover{
+    zoom: 1.1;
+}
+
+.navBar ul{
+    position: relative;
+    align-items: center;
+}
+
+.navBar li a{
+    font-size: 14px;
+    margin-right: 8px;
+    border-radius: 10px;
+    background-color: transparent;
+    box-shadow: 3px 3px 8px 2px rgba(0, 0, 0, 0.5);
+    border: 1px solid;
+}
+
+.dropdown-menu{
+    width: 1750px;
+    height: 1020px;
+    background-color: rgba(24, 24, 24, 0.753);
+}
+
+.dropdown-menu li a{
+    color: black;
+    background-color: rgb(255, 255, 255);
+}
+
+
+
+.dropdown-menu img{
+    width: 400px;
+    height: 200px;
+    margin: 10px auto;
+    padding: 0 auto;
+    
+}
+
+
+.dropdown-menu li{
+    text-align: center;
+    margin: 0 auto;
+    padding: 20px;
+    width: 100%;
+}
+
+.dropdown-menu li #suv #car{
+    display: none;
+    
+}
+
+
+.dropdown-menu a{
+    background-color: aliceblue;
+}
+
+#banner{
+    display: flex;
+    margin-top: 120px;
+    margin: 0px auto;
+    height: 700px;
+    width: 1350px;
+    border: 1px solid;
+    box-shadow: 3px 3px 8px 2px rgba(0, 0, 0, 0.7);
+    margin-bottom: 90px;
+}
+
+#banner img{
+    height: 700px;
+}
+
+#car{
+    margin-right: 25px;
+    height: 240px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px 2px rgba(255, 255, 255, 0.9);
+}
+
+#car:hover{
+    opacity: 70%;
+    zoom: 1.1;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+#logo{
+    width: 90px;
+    height: 90px;
+}
+
+.lgn{
+    margin-left: 1190px;
+}
+
+.card{
+    margin:5px;
+    height: 0px;
+}
+
+
+.grid{
+    display: grid;
+    margin:auto;
+    gap: 10px;
+
+    grid-template-columns: 590px 590px 380px;
+    grid-template-rows: 200px 200px 250px;
+	grid-template-areas:
+    "item-1  item-2 item-2"
+    "item-1  item-2 item-2 "
+    "item-1  item-3 item-4"
+    ;
+}
+
+.cx1{
+    grid-area: item-1; 
+    background-image: url(img/car-card.webp);
+    background-repeat:round;    
+    background-size: cover;
+    height: 100%;
+    width: 590px;
+    opacity: 65%;
+}
+
+.cx2{
+    grid-area: item-2;
+    background-repeat:round;    
+    background-size: cover;
+    background-image: url(img/car-card2.webp);
+    width: 100%;
+    height: 100%;
+    opacity: 65%;
+}
+
+.cx3{
+    grid-area: item-3;
+    background-repeat:round;    
+    background-size: cover;
+    background-image: url(img/car-card3.jpg);
+    height: 100%;
+    width: 590px;
+    opacity: 65%;
+
+}
+.cx4{
+    grid-area: item-4;
+    background-repeat:round;    
+    background-size: cover;
+    background-image: url(img/car-card4.webp);
+    height: 100%;
+    opacity: 65%;
+}
+.cx5{
+    grid-area: item-5;
+    background-repeat:round;    
+    background-size: cover;
+    background-image: url(img/clasic.jpg);
+    height: 100%;
+    opacity: 65%;
+}
+
+
+/* Caixa Hovers */
+
+.cx1:hover{
+    cursor: pointer;
+    opacity: 100%;
+}
+
+.cx2:hover{
+    cursor: pointer;
+    opacity: 100%;
+}
+
+.cx3:hover{
+    cursor: pointer;
+    opacity: 100%;
+}
+
+.cx4:hover{
+    cursor: pointer;
+    opacity: 100%;
+}
+.cx5:hover{
+    cursor: pointer;
+    opacity: 100%;
+}
+
+.card button{
+    border-radius: 10px;
+    padding: 7px;
+}
+
+.card button:hover{
+    background-color: black;
+    color: white;
+    transition: 0.4s;
+}
+
+.modal-header{
+    align-items: center;
+    text-align: center;
+}
+
+.modal-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 320px;
+}
+
+.modal-body #login2{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: 20px;
+}
+
+.modal-body #login2 label{
+    margin-bottom: 10px;
+}
+
+.modal-body #login2 input{
+    margin-bottom: 20px;
+}
+
+#botao-cadastrar2 {
+    margin-left: 30px;
+}

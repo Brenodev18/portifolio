@@ -1,0 +1,39 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+
+}
+
+.container{
+    margin: auto;
+    width: 70vw;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.cards{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border: 1px solid;
+    height: 200px;
+}
+
+.txt{
+    margin: 5px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+}
+.cards img{
+    width: 200px;
+    height: 200px;
+    float: right;
+}

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Registros</title>
+    <link rel="stylesheet" href="/Surto_System/css/regs.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <img class="imgr" src="">
+   <nav>
+        <div class="bar">
+            <ul>
+                <img id="logo" src="/Surto_System/img/logo.png">
+                <a id="rs" href="dash.html">
+                    Home
+                </a>
+
+                <a id="hm" href="Registros.html">
+                    Atendimentos
+                </a>
+
+                <a href="/Surto_System/docs/Galeria.html">
+                    Galeria
+                </a>
+
+                <div class="perf">
+                    <a id="lgn" href="/Surto_System/docs/login.html">Logout</a>
+                    <img class="perfil" src="/Surto_System/img/perfil.png">
+                </div>
+
+            </ul>
+        </div>
+    </nav>
+
+    </header>
+    <section class="filter-box">
+        <label for="tipo">Filtrar por tipo:</label>
+
+        <select id="tipo">
+            <option value="todos">Todos</option>
+            <option value="pacientes">Pacientes</option>
+            <option value="consultas">Consultas</option>
+            <option value="atendimentos">Atendimentos</option>
+        </select>
+        <a class="btn" href="novoRegistro.html" style="margin-left:8px;">Novo registro</a>
+    </section>
+
+    <section class="cards">
+        <div class="card">
+            <h3>Total de Pacientes</h3>
+            <p class="number">128</p>
+        </div>
+
+        <div class="card">
+            <h3>Consultas Realizadas</h3>
+            <p class="number">342</p>
+        </div>
+
+        <div class="card">
+            <h3>Atendimentos no Mês</h3>
+            <p class="number">57</p>
+        </div>
+    </section>
+
+    <section class="table-section">
+        <h2>Lista de Registros</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Tipo</th>
+                    <th>Nome</th>
+                    <th>Data</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>#001</td>
+                    <td>Paciente</td>
+                    <td>Ana Bezerra</td>
+                    <td>20/11/2025</td>
+                    <td class="status ativo">Ativo</td>
+                </tr>
+
+                <tr>
+                    <td>#002</td>
+                    <td>Consulta</td>
+                    <td>Carlos Souza</td>
+                    <td>19/11/2025</td>
+                    <td class="status pendente">Pendente</td>
+                </tr>
+
+                <tr>
+                    <td>#003</td>
+                    <td>Atendimento</td>
+                    <td>Maria Silva</td>
+                    <td>18/11/2025</td>
+                    <td class="status concluido">Concluído</td>
+
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+</body>
+</html>

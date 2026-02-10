@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendamentos</title>
+    <link rel="stylesheet" href="/Surto_System/conteudos/Agendamento.css">
+     <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+      <nav>
+      <div class="bar">
+        <ul>
+           <img id="logo" src="/Surto_System/img/logo.png">
+           <a href="/Surto_System/docs/dash.html" id="hm"><li>Home</li></a>
+
+           <a href="/Surto_System/docs/Registros.html"><li>Atendimentos</li></a>
+          
+           <a href="/Surto_System/docs/Galeria.html"><li>Galeria</li></a>
+
+           
+
+           <div class="perf">
+             <a id="lgn" href="/Surto_System/docs/login.html">Logout</a>
+             <img class="perfil" src="/Surto_System/img/perfil.png">
+           </div>
+
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Tabela -->
+    <div class="table-wrapper">
+        <div class="tab">
+            <div class="add">
+                <h2>Agendamentos</h2>
+                <button id="abrirModalBtn" >Novo Agendamento</button>
+            </div>
+            <div class="cab">
+                <div class="cell">Data</div>
+                <div class="cell">Hora</div>
+                <div class="cell">Nome</div>
+                <div class="cell">Ação</div>
+            </div>
+
+            <div class="list">
+                <div class="cell" data-label="Data">24/04/2025</div>
+                <div class="cell" data-label="Hora">10:20</div>
+                <div class="cell" data-label="Nome">João pedro</div>
+                <div class="cell actions" data-label="Ação">
+                    <img class="acao" src="icons/escrever.png" alt="editar">
+                    <img src="icons/excluir.png" alt="excluir">
+                </div>
+            </div>
+
+            <div class="list">
+                <div class="cell" data-label="Data">24/04/2025</div>
+                <div class="cell" data-label="Hora">10:20</div>
+                <div class="cell" data-label="Nome">João pedro</div>
+                <div class="cell actions" data-label="Ação">
+                    <img class="acao" src="icons/escrever.png" alt="editar">
+                    <img src="icons/excluir.png" alt="excluir">
+                </div>
+            </div>
+
+            <div class="list">
+                <div class="cell" data-label="Data">24/04/2025</div>
+                <div class="cell" data-label="Hora">10:20</div>
+                <div class="cell" data-label="Nome">João pedro</div>
+                <div class="cell actions" data-label="Ação">
+                    <img class="acao" src="icons/escrever.png" alt="editar">
+                    <img src="icons/excluir.png" alt="excluir">
+                </div>
+            </div>
+
+            <div class="list">
+                <div class="cell" data-label="Data">24/04/2025</div>
+                <div class="cell" data-label="Hora">10:20</div>
+                <div class="cell" data-label="Nome">João pedro</div>
+                <div class="cell actions" data-label="Ação">
+                    <img class="acao" src="icons/escrever.png" alt="editar">
+                    <img src="icons/excluir.png" alt="excluir">
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- MODAL 1  -->
+<dialog id="meuModal">
+  <div class="modal-header">
+    <h2>Buscar paciente</h2>
+    <button id="fecharModalBtn">&times;</button>
+  </div>
+  <div class="modal-body">
+    <section class="filter-box">
+
+        <select class="container-scroll" id="tipo">
+            <option class="inp" value="todos" >Nome/Cpf</option>
+            <option value="pacientes">Maria - 465.552.568-75</option>
+            <option value="consultas">Luana - 558.693.221-08</option>
+            <option value="consultas">thais - 298.793.621-07</option>
+        </select>
+
+        <section class="inputs">
+
+            <div class="ip-int">
+                <label for="DIa">Dia</label>
+                <input type="date">
+            </div>
+
+             <div class="ip-int">
+                <label for="DIa">Horario</label>
+                <input id="time" type="time">
+            </div>
+
+        </section>
+        
+    </section>
+  </div>
+  <div class="modal-footer">
+    <button id="cancelarModalBtn">Salvar</button>
+    <button id="NovoRegistro">Novo registro</button>
+  </div>
+</dialog>
+
+    <!-- MODAL 2  -->
+     <dialog id="meuModal">
+  <div class="modal-header">
+    <h2>Buscar paciente</h2>
+    <button id="fecharModalBtn">&times;</button>
+  </div>
+  <div class="modal-body">
+    <section class="filter-box">
+
+
+        <section class="inputs">
+
+            <div class="ip-int">
+                <label for="DIa">Dia</label>
+                <input type="date">
+            </div>
+
+             <div class="ip-int">
+                <label for="DIa">Horario</label>
+                <input id="time" type="time">
+            </div>
+
+        </section>
+        
+    </section>
+  </div>
+  <div class="modal-footer">
+    <button id="cancelarModalBtn">Salvar</button>
+    <button id="cancelarModalBtn2">Novo registro</button>
+  </div>
+</dialog>
+    
+<script src="/js/Agend.js"></script>
+</body>
+</html>

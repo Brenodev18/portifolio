@@ -1,0 +1,250 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins', sans-serif;
+    background:#f1f5ea;
+    padding:40px;
+    color:#333;
+}
+
+
+.title{
+    text-align:center;
+    font-size:36px;
+    font-weight:700;
+    margin-bottom:8px;
+}
+
+.subtitle{
+    text-align:center;
+    font-size:15px;
+    color:#777;
+    margin-bottom:40px;
+}
+
+.card{
+    width:100%;
+    background:white;
+    border-radius:8px;
+    box-shadow:0 4px 14px rgba(0,0,0,0.08);
+    padding:25px;
+    margin-bottom:30px;
+}
+
+/* estilo modal/janela mais compacto */
+.card.modal{
+    max-width:700px;
+    margin:0 auto 30px auto;
+    border-radius:12px;
+    padding:20px;
+}
+
+/* Harmonização: cores, espaçamentos e micro-interações */
+.container{ padding:28px 16px; }
+.card.modal{ padding:28px 32px; }
+.card-header h2{ color:#2f4b40; }
+.card-header p{ color:#667a73; }
+
+.tab-switch{ margin-bottom:18px; }
+.tab-btn{ font-size:14px; padding:8px 16px; }
+.tab-btn.active{ box-shadow: 0 6px 20px rgba(44,86,76,0.08); }
+
+/* Inputs mais suaves */
+input, textarea{
+    border-radius:8px;
+    border:1px solid #e0e4e0;
+    background:#fbfdfb;
+    padding:10px 12px;
+    transition: box-shadow .14s ease, transform .12s ease, border-color .12s ease;
+}
+input:focus, textarea:focus{ box-shadow:0 10px 30px rgba(42,84,72,0.06); border-color:#9ec4b6; transform: translateY(-2px); }
+
+/* Checkboxes com espaçamento e visual mínimal */
+.form-group.full label{ display:flex; align-items:center; gap:8px; font-weight:600; }
+.form-group.full input[type="checkbox"]{ width:18px; height:18px; accent-color: #6aa087; }
+
+/* detalhes animados (visibilidade via classe .visible) */
+.detail-input{ display:block; opacity:0; transform:translateY(-6px); max-height:0; overflow:hidden; transition:opacity .18s ease, transform .18s ease, max-height .18s ease; border:1px solid transparent; }
+.detail-input.visible{ opacity:1; transform:translateY(0); max-height:120px; border-color:#dcdfe0; }
+
+/* Textarea harmonizado */
+textarea#observacoes{ background:#fff; border-color:#e6e6e6; }
+
+/* melhorar espaçamento entre grupos */
+.form-grid{ gap:18px; }
+.form-group{ padding-bottom:6px; }
+
+@media (max-width:780px){
+    body{ padding:22px; }
+    .card.modal{ padding:20px; }
+}
+
+.mode-toggle{
+    display:inline-flex;
+    background:#f4f7f3;
+    border-radius:999px;
+    padding:6px;
+    gap:6px;
+    margin-bottom:16px;
+}
+
+/* abas principais (Dados Pessoais / Formulário) */
+.tab-switch{
+    display:inline-flex;
+    gap:8px;
+    margin-bottom:14px;
+}
+
+.tab-btn{
+    background:transparent;
+    border:1px solid transparent;
+    padding:8px 14px;
+    border-radius:999px;
+    cursor:pointer;
+    font-weight:600;
+    color:#5e6a63;
+}
+
+.tab-btn.active{ background:#e9f3ec; border-color:rgba(125,179,158,0.12); color:#2f4b40; }
+
+.tab-content{ margin-top:6px; }
+.tab-panel{ display:block; }
+
+.form-group.full input[type="text"]{ margin-top:8px; }
+
+/* estilo para checkboxes + detalhes */
+.form-group.full label input[type="checkbox"]{ margin-right:10px; vertical-align:middle; }
+.form-group.full input[type="text"]{ margin-top:8px; padding:8px 10px; border-radius:6px; }
+
+/* detalhes começam escondidos; serão exibidos quando checkbox marcado */
+.detail-input{ display:none; }
+
+textarea#observacoes{ width:100%; padding:10px; border:1px solid #d6d6d6; border-radius:6px; resize:vertical; font-size:14px; margin-top:8px; }
+
+
+.mode-btn{
+    background:transparent;
+    border:none;
+    padding:8px 16px;
+    border-radius:999px;
+    cursor:pointer;
+    font-weight:600;
+    color:#6b6b6b;
+}
+
+.mode-btn.active{
+    background:linear-gradient(180deg,#8fb9a3,#6aa087);
+    color:white;
+    box-shadow:0 6px 18px rgba(16,24,32,0.08);
+}
+
+.card-header{
+    display:flex;
+    gap:12px;
+    align-items:flex-start;
+    margin-bottom:20px;
+}
+
+.card-header h2{
+    font-size:20px;
+    font-weight:600;
+}
+
+.card-header p{
+    font-size:14px;
+    color:#777;
+    margin-top:-2px;
+}
+
+.icon{
+    font-size:26px;
+}
+
+.form-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:20px;
+}
+
+.form-group{
+    display:flex;
+    flex-direction:column;
+}
+
+.form-group.full{
+    grid-column:1 / 3;
+}
+
+/* CPF input occupies full width in its container */
+.form-by-cpf .form-group.full input{ width:100%; }
+
+label{
+    font-size:14px;
+    font-weight:500;
+    margin-bottom:5px;
+}
+
+input{
+    height:42px;
+    padding:10px 12px;
+    border-radius:6px;
+    border:1px solid #d6d6d6;
+    font-size:14px;
+    outline:none;
+}
+
+input:focus{
+    border-color:#8fb9a3;
+}
+@media (max-width:780px){
+    .form-grid{
+        grid-template-columns:1fr;
+    }
+    .form-group.full{
+        grid-column:1;
+    }
+}
+
+.btn{
+    display:inline-block;
+    padding:10px 18px;
+    background:#9ec4b6;
+    color:#fff;
+    border-radius:28px;
+    font-weight:700;
+    border:none;
+    cursor:pointer;
+    font-size:14px;
+    text-decoration:none;
+    margin:6px 6px;
+}
+
+.btn:hover{
+    background:#8ab49f;
+}
+
+.btn.full{display:block;width:100%;text-align:center}
+
+/* feedback de salvamento */
+.save-alert{
+    display:block;
+    background:linear-gradient(180deg,#e6faf0,#dff6eb);
+    color:#1f5f45;
+    padding:8px 12px;
+    border-radius:8px;
+    border:1px solid rgba(31,95,69,0.08);
+    text-align:center;
+    margin-bottom:10px;
+    font-weight:600;
+    box-shadow:0 8px 18px rgba(31,95,69,0.06);
+    transform:translateY(-6px);
+    opacity:0;
+    transition:opacity .18s ease, transform .18s ease;
+}
+.save-alert.visible{ opacity:1; transform:translateY(0); }
+
+.card-actions{ margin-top:16px; display:flex; flex-direction:column; gap:10px; align-items:stretch; }

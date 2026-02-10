@@ -1,0 +1,205 @@
+
+.cab{
+    display: flex;
+    align-items: start;
+    position: fixed;
+    float: left;
+    z-index: 99;
+    height: 100px;
+    width: 90%;
+    font-size:35px;
+    padding: 20px;
+    margin-top: 300px;
+    margin-left: -50px;
+    
+    
+}
+
+.cab li{
+    list-style: none;
+}
+
+.cab a{
+    color: blueviolet;
+    text-decoration: none;
+    background-color: aliceblue;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 2px 2px 7px 2px rgba(0, 0, 0, 0.5);
+}
+
+.cab a:hover{
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    transition: 0.4s;
+    opacity: 100%;
+}
+
+/* Configuração inicial para o layout funcionar bem */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background: #f1f1f1;
+}
+
+/* =========================================================
+   === LAYOUT PRINCIPAL (GRID) ===
+   ========================================================= */
+/*
+  Define a estrutura geral da página com Grid.
+  - 2 colunas (250px fixa + 1fr fluida)
+  - 3 linhas (70px header, 1fr conteúdo, 50px footer)
+*/
+.layout {
+    display: grid;
+    
+    /* Colunas: 1ª (sidebar) fixa com 250px, 2ª (conteúdo) ocupa o resto */
+    grid-template-columns: 250px 1fr; 
+    
+    /* Linhas: 1ª (header) 70px, 2ª (conteúdo) flexível, 3ª (footer) 50px */
+    grid-template-rows: 70px 1fr 50px; 
+    
+    /* Mapeia os nomes das áreas para o grid */
+    grid-template-areas:
+        "header header"   /* Header ocupa as duas colunas da 1ª linha */
+        "sidebar content"  /* Sidebar na 1ª col., Content na 2ª col. da 2ª linha */
+        "sidebar footer";  /* Sidebar na 1ª col., Footer na 2ª col. da 3ª linha */
+        /* Garante que o layout ocupe 100% da altura da tela */
+    height: 100vh; 
+}
+/* =========================================================
+   === CABEÇALHO FIXO ===
+   ========================================================= */
+.header {
+    grid-area: header; /* Conecta esta classe à área "header" do grid */
+    position: fixed;   /* Fica fixo no topo da tela */
+    top: 0; left: 0; right: 0; /* Ocupa toda a largura do topo */
+    height: 50px;      /* Altura definida (note que a linha do grid é 70px) */
+    /* Estilos visuais básicos */
+    background: #d87093;
+    color: #fff;
+    padding: 10px 30px; /* Espaçamento interno */
+    z-index: 1000;      /* Garante que fique acima de outros elementos */
+    /* Para alinhar o "Orkut" e o botão "Login" */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* =========================================================
+   === BARRA LATERAL (SIDEBAR) ===
+   ========================================================= */
+.sidebar {
+    grid-area: sidebar; /* Conecta à área "sidebar" do grid */
+    position: fixed;    /* Fica fixa na lateral */
+    width: 250px;       /* Largura fixa (mesmo valor da coluna no grid) */
+    
+    /* Posicionamento: Inicia abaixo do header (70px) e vai até o rodapé */
+    top: 70px; 
+    left: 0; 
+    bottom: 0; 
+    
+    /* Estilos visuais básicos */
+    background: #e216e9;
+    padding: 20px;
+    z-index: 1; /* Fica acima do conteúdo, mas abaixo do header */
+    
+    /* Para alinhar o perfil no topo e o rodapé da sidebar embaixo */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.sidebar-footer{
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+
+.sidebar-footer img{
+    width: 40px;
+    height: 40px;
+}
+
+/* =========================================================
+   === CONTEÚDO PRINCIPAL ===
+   ========================================================= */
+.content {
+    grid-area: content; /* Conecta à área "content" do grid */
+    /* Margens para espaçar do header e sidebar */
+    /* (Note: o padding-top do layout é 70px por causa do header) */
+    margin: 5px 20px 30px 30px;
+    padding: 20px;
+    /* Altura mínima para garantir que o conteúdo preencha a tela, 
+       descontando o header (70px) e o footer (50px) */
+    min-height: calc(100vh - 120px); 
+    /* Adiciona rolagem vertical SÓ no conteúdo, se necessário */
+    overflow-y: auto; 
+}
+/* =========================================================
+   === RODAPÉ ===
+   ========================================================= */
+.footer{
+    grid-area: footer; /* Conecta à área "footer" do grid */
+    /* Estilos visuais básicos */
+    background: #d87093;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    display: flex;
+}
+
+.comentario-area{
+    display: none;
+}
+
+.perfil{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    color: #fff;
+}
+
+.perfil img{
+    display: block;
+}
+
+.logo{
+    display: block;
+    width: 100px;
+}
+
+.card-top{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    height: 180px;
+}
+
+.card{
+    background: white;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.card .avatar{
+    width: 50px;
+    border-radius: 50%;
+}
+
+.acoes{
+    gap: 20px;
+}
+
+.acoes img{
+    width: 20px;
+    height: 20px;
+}
+
+.comentar img{
+    width: 20px;
+    height: 20px;
+}

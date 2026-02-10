@@ -1,0 +1,166 @@
+@media screen and (max-width: 1137px) {
+
+    .card-group{
+        display: flex;
+        flex-direction: column;
+        padding: 120px;
+        margin: 20px;
+    }
+
+}
+
+@media screen and (max-width: 794px){
+    .card-group{
+        margin: 0px;
+        padding: 110px;
+        display: contents;
+    }
+}
+
+body{
+    background: url(img/white.jpg);
+}
+
+/*cabeçalho*/
+
+
+header img{
+    height: 190px;
+    width: 190px;
+}
+
+header li{
+    font-size: 20px;
+}
+ #btn1{
+    margin-bottom: 50px;
+    border: 1px solid;
+    
+ }
+ #btn1:hover{
+    background:black ;
+    color: white;
+ }
+
+
+/*Conteudo principal*/
+
+
+/*banner*/
+
+#section-banners img{
+    height: 600px;
+    padding: 40 auto;
+    margin: 10 auto;
+}
+
+.container{
+    background-color: black;
+    border: 1px solid;
+    box-shadow: 2px 1px 8px 4px rgba(128, 125, 125, 0.8);
+    width: 90%;
+    height: 610px;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+/*Produtos vendidos*/
+#section-vendidos {
+    text-align: center;
+}
+
+#section-vendidos h2{
+    font-weight: bold;
+    padding: 20px;
+}
+
+#section-vendidos img{
+    border-radius: 08px;
+    height: 350px;
+}
+
+#section-vendidos .card{
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin: 30px;
+    box-shadow: 2px 2px 7px 5px rgba(0, 0, 0, 0.8);
+}
+
+#section-vendidos .preco{
+    color: red;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/*Rodapé*/
+
+footer{
+    text-align: center;
+    position: relative;
+    top: 30px;
+    bottom: 0;
+}
+
+footer p{
+    text-align: center;
+    font-weight: bold;
+    padding: 10px;
+}
+
+/*Botão Voltar topo*/
+
+#voltar-topo{
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+/* página de login  */
+
+
+/* Formulário de cadastro*/
+
+
+ #prev{
+
+ }
+
+ #prev:hover{
+    cursor: pointer;
+    opacity: 50%;
+ }
+
+ #menu{
+    margin-bottom: 60px;
+    margin-left: 500px;
+    width: 453px;
+}
+
+#menu a:hover{
+    color: black;
+}
+
+#menu a{
+    text-decoration: none;
+    font-size: 20px;
+    color: #fff;
+}
+
+#menu ul{
+    list-style: none;
+    background: linear-gradient(to bottom, #111111, rgb(255, 255, 255));
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 7px;
+    padding: 0px;
+    margin: 0px;
+}
+
+#menu li{
+    height: 47px;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    width: 220px;
+    border-right: 1px solid rgb(0, 0, 0);
+    border-radius: 5px;
+}
+

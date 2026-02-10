@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="cab">
+        <ul>
+            <li>
+                <a href="/atividades/Logica de progamação.html">Voltar</a>
+            </li>
+        </ul>
+    </header>
+    <div id="group">
+        <div id="cl1">
+            <h1> Cálculo de Imc </h1>
+            <svg xmlns="http://www.w3.org/2000/svg"
+            width="40" height="30" fill="currentColor" class="bi bi-rulers"
+            viewBox="0 0 16 16">
+              <path d="M1 0a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h5v-1H2v-1h4v-1H4v-1h2v-1H2v-1h4V9H4V8h2V7H2V6h4V2h1v4h1V4h1v2h1V2h1v4h1V4h1v2h1V2h1v4h1V1a1 1 0 0 0-1-1z"/>
+            </svg>
+        </div>
+
+        
+        <label for="">Nome</label>
+        <input type="text" id="name" style="border-top:none; border-left: none; border-right: none; width: 350px; background-color: transparent; border-radius: 0px; margin-top: -2px;">
+            
+        <div id="box">
+            <label for="">Altura (cm)</label>
+            <input type="number" id="altura">
+            <label for="">Peso (Kg)</label>
+            <input type="number" id="peso">
+        </div>      
+
+        <textarea id="result"> O RESULTADO APARECERA AQUI</textarea>
+
+        <button onclick="imc()" >calcular</button>
+        <a href="index.html"><button onclick="imc()" >Resetar</button></a>
+    
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,154 @@
+
+.cab{
+    display: flex;
+    align-items: start;
+    position: fixed;
+    float: left;
+    z-index: 1;
+    height: 100px;
+    width: 90%;
+    font-size:35px;
+    padding: 20px;
+    margin-top: -80px;
+    margin-left: -10px;
+    
+    
+}
+
+.cab li{
+    list-style: none;
+}
+
+.cab a{
+    color: blueviolet;
+    text-decoration: none;
+    background-color: aliceblue;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 2px 2px 7px 2px rgba(0, 0, 0, 0.5);
+}
+
+.cab a:hover{
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    transition: 0.4s;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: auto;
+    width: 100%;
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 140px;
+    text-align: center;
+    background: rgb(78, 165, 236);
+    margin-bottom: 2px;
+}
+.title h2{
+        font-size: 40px;
+        color: white;
+}
+
+.container{ 
+    margin: auto;
+    padding: 40px;
+    width: 95%;
+    height: 600px;
+    display: grid;
+    gap: 15px;
+
+    grid-template-columns: 400px 400px repeat(auto-fit,minmax(250px,1fr));
+    grid-template-rows: 0fr 0fr 0fr 0fr;
+    grid-template-areas: 
+        "item-1 item-2 item-3 item-4"
+        "item-5 item-6 item-7 item-8"
+     
+    ;
+}
+
+.container img:hover{
+    cursor: pointer;
+}
+.cx1{
+    grid-area: item-1;
+    background-repeat: round;
+    background-size: cover;
+    height: 100%;
+    border-radius: 8px;
+
+}
+.cx2{
+    grid-area: item-2;
+    background-repeat: round;
+    background-size: cover;
+    height: 100%;
+    border-radius: 8px;
+
+}
+.cx3{
+    grid-area: item-3;
+    background-repeat: round;
+    background-size: cover;
+    height: 100%;
+    border-radius: 8px;
+
+}
+.cx4{
+    grid-area: item-4;
+    background-repeat: round;
+    background-size: cover;
+    height: 100%;
+    border-radius: 8px;
+
+}
+.cx5{
+    grid-area: item-5;
+    background-repeat: round;
+    background-size: cover;
+    height: 100%;
+    border-radius: 8px;
+
+}
+.cx6{
+    grid-area: item-6;
+    background-repeat: round;
+    background-size: cover;
+    height: 100%;
+    border-radius: 8px;
+
+}
+.cx7{
+    grid-area: item-7;
+    background-repeat: round;
+    background-size: cover;
+    height: 100%;
+    border-radius: 8px;
+}
+.cx8{
+    grid-area: item-8;
+    background-repeat: round;
+    background-size: cover;
+    height: 100%;
+    border-radius: 8px;
+}
+
+.cont{
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 90px;
+    background-color: black;
+    color: white;
+}

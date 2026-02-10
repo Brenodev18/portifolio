@@ -1,0 +1,119 @@
+
+.cab{
+    display: flex;
+    align-items: start;
+    position: fixed;
+    float: left;
+    z-index: 1;
+    height: 100px;
+    width: 90%;
+    font-size:35px;
+    padding: 20px;
+    margin-top: 120px;
+    margin-left: -5px;
+    
+    
+}
+
+.cab li{
+    list-style: none;
+}
+
+.cab a{
+    color: blueviolet;
+    text-decoration: none;
+    background-color: aliceblue;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 2px 2px 7px 2px rgba(0, 0, 0, 0.5);
+}
+
+.cab a:hover{
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    transition: 0.4s;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background-color: oklch(.21 .034 264.665);
+    display: flex;
+    flex-direction: column;
+}
+
+.buton{
+    margin-left: 300px;
+    border: 1px solid;
+}
+.buton:hover{
+    color: black;
+    background-color: aliceblue;
+    cursor: pointer;
+}
+
+.carousel-breno{
+    height: 600px;
+    width: 60%;
+    margin: auto;
+}
+
+.card{
+    width: 400px;
+    height: 525px;
+}
+
+.modal-breno{
+    width: 100%;
+    height: 800px;
+}
+
+.modal-breno1{  
+    margin: -20px;
+    margin-bottom: 290px;
+    width: 500px;
+    height: 400px;
+    
+}
+
+#bar-lateral {
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+}
+
+#bar-lateral h2{
+    font-size: 0px;
+    color: aliceblue;
+    margin-bottom: 20px;
+}
+
+
+.cx{
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bar1{
+    background: yellow;
+    color: aliceblue;
+    width: 300px;
+    height: 300px;
+    border: 1px solid white;;
+}
+
+.bar1 img{
+ 
+}
+
+.bar2{
+    background: rgb(255, 0, 0);
+    width: 300px;
+    height: 300px;
+    border: 1px solid white;
+}   

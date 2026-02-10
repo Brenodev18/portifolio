@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="visu.css">
+    <title></title>
+</head>
+
+<body onload="slider()">
+    <header id="cab2">     
+    </header> 
+
+
+    <nav id="menu2">
+            <ul>
+                <li><a href="Index.html" target="_self">HOME</a></li>        
+                <li><a href="Fale-conosco.html" target="_self">CONTATO</a></li>
+            </ul>
+
+        </nav>
+
+    <section id="contato">        
+        <form id="Form" name="fContato" method="post" action="#">
+            <h1>Formulario de cadastro</h1>
+
+            
+                <div id="ld">
+                    <div id="coluna">
+                        <label>Nome</label>
+                        <input type="text" maxlength="50" size="60" name="fNome" autofocus required>
+                    </div>
+                    
+                    <div id="coluna">
+                        <label>Telefone de contato</label>
+                        <input id="tel" type="tel" maxlength="50" size="20" name="fFone" placeholder="(xx) xxxx-xxxx">
+                    </div>
+                </div>
+
+                <!-- *////////////////////////////////// -->
+
+                <div id="ld">
+                    <div id="coluna">
+                        <label>Email para contato</label>
+                        <input type="email" maxlength="50" size="60" name="fEmail" required>
+                    </div>
+                    <div id="coluna">
+                        <label>Cep</label>
+                        <input id="Cep" type="text" maxlength="10" size="15" name="fCep" placeholder="xxxxx-xxx" pattern="\d{5}-?{3}" required>
+                    </div>
+                </div>
+
+                <!-- *////////////////////////////////// -->   
+            <div id="ld">
+                <div id="coluna">
+                    <label>Assunto</label>
+                    
+                </div>
+                
+            </div>
+                <textarea name="text" id="des"></textarea>
+            <div id="ld">
+                <div class="botao">
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Limpar">
+                </div>
+            </div>
+
+        </form>
+    </section>
+
+ 
+    <!-- <footer id="fot">
+    <p>&copy;Pagina desenvolvida por Breno Rodrigues (todos os direitos reservados).</p>
+</footer> -->
+
+</body>
+
+</html>
